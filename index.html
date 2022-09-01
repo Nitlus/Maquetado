@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Portfolio Web Lucas Sifon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='node_modules/boxicons/css/boxicons.min.css'>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+ </head>
+
+ <body>
+    <div class="sidebar close">
+        <div class="logo-details">
+            <img src="image/argentina-programa-icon.png">
+            <span class="logo_name">Argentina<br>programa</span>
+        </div>
+        <ul class="menu-tab">
+            <i class='bx bx-menu'></i>
+        </ul>
+        <ul class="nav-links">
+            <li>
+                <a href="#Home">
+                    <i class="bx bxs-home"></i>
+                    <span class="link_name">Home</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a href="#Home" class="link_name">Home</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#Perfil">
+                    <i class='bx bxs-user' ></i>
+                    <span class="link_name">Sobre Mi</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#Perfil">Sobre Mi</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bx-book-alt' ></i>
+                        <span class="link_name">Lenguajes</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow' ></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Lenguajes</a></li>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">Javascript</a></li>
+                    <li><a href="#">PHP</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-dashboard' ></i>
+                    <span class="link_name">Portfolio</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Portfolio</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bx-world' ></i>
+                        <span class="link_name">Redes</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow' ></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Redes</a></li>
+                    <li><a href="#">Github</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-chalkboard' ></i>
+                    <span class="link_name">Proyectos</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Proyectos</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-info-square'></i>
+                    <span class="link_name">Acerca de</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Acerca de</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="profile-details">
+                    <div class="profile-content">
+                        <img src="image/ImgPerfil.jpg">
+                    </div>
+                    <div class="name-job">
+                        <div class="profile_name">Lucas Sifon</div>
+                        <div class="job">Progrmador</div>
+                    </div>
+                    <i class='bx bx-log-out' ></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <header id="particles-js" class="home-section">
+        <div id="Home">
+            <div class="heading">
+                <h1>
+                    <span class="texto">Hola,<br> Soy Lucas<br></span>
+                    <span class="texto2">Mi Portfolio Web</span>
+                </h1>
+                <div class="contact">
+                    <button type="button" class="btn btn-outline-info btn-lg">Contactame</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="mainSite">
+        <div id="Perfil">
+            <div class="perfil">
+
+
+            </div>
+        </div>
+        <div id="Lenguajes">
+
+        </div>
+        <div id="Portfolio">
+
+        </div>
+        <div id="Proyectos">
+
+        </div>
+        <div id="Acerca de">
+
+        </div>
+    </main>
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+  <script src="node_modules/particles.js/particles.js"></script>
+  <script src="node_modules/particles.js/demo/js/app.js"></script>
+  <script src="node_modules/boxicons/dist/boxicons.js"></script>
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/@popperjs/core/dist/umd/popper.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+ </body>
+
+</html>
